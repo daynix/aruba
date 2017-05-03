@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'aruba/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'aruba'
+  s.name        = 'aruba-win-fix'
   s.version     = Aruba::VERSION
   s.authors     = ["Aslak Hellesøy", "David Chelimsky", "Mike Sassak", "Matt Wynne", "Jarl Friis", "Dennis Günnewig"]
-  s.description = 'Extension for popular TDD and BDD frameworks like "Cucumber", "RSpec" and "Minitest" to make testing commandline applications meaningful, easy and fun.'
+  s.description = 'Fork of cucumber/aruba with fixes for broken Windows support'
   s.summary     = "aruba-#{s.version}"
   s.license     = 'MIT'
   s.email       = 'cukes@googlegroups.com'
-  s.homepage    = 'http://github.com/cucumber/aruba'
+  s.homepage    = 'http://github.com/rbld/aruba'
 
   s.add_runtime_dependency 'cucumber', '>= 1.3.19'
   s.add_runtime_dependency 'childprocess', '~> 0.5.6'
